@@ -2,7 +2,6 @@
             padding: 0;
             margin: 0;
         }
-
         .warp {
             position: relative;
             animation-name: shangqu;
@@ -12,7 +11,6 @@
         #warp {
             background-color: #9198e5;
         }
-
         .title {
             width: 100%;
             height: 80px;
@@ -26,12 +24,13 @@
             height: 30px;
             border-radius: 30px;
             animation-name: titimg;
-            animation-duration: 3s;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            transition-timing-function:linear;
         }
         .main {
             height: 500px;
         }
-
         .subject {
             font-size: 25px;
             font-weight: 500;
@@ -41,18 +40,15 @@
             position: relative;
             animation-fill-mode: forwards;
         }
-
         .spacing {
             margin: 15px 0;
         }
-
         .answerone {
             animation-delay: 6s;
             animation-name: answerone;
             animation-duration: 1.5s;
             width: 400px;
         }
-
         .answertow {
             animation-delay: 7.5s;
             position: relative;
@@ -60,7 +56,6 @@
             animation-duration: 3s;
             width: 400px;
         }
-
         .answerthree {
             animation-delay: 10.5s;
             animation-name: answerthree;
@@ -68,7 +63,6 @@
             width: 400px;
             position: relative;
         }
-
         .answerfour {
             animation-delay: 12s;
             animation-name: answerfour;
@@ -77,7 +71,6 @@
         .footer{
             height: 179px;
         }
-
         @keyframes tit{
             from {
                 -webkit-transform: rotateY(0);
@@ -100,12 +93,10 @@
             0%{right: -1580px;}
             100%{right: 0px;}
         }
-
         @keyframes answerthree{
             from{left: -400px;-webkit-transform: rotate(0deg);}
             to{left: 0px;-webkit-transform: rotate(360deg);}
         }
-
         @keyframes answerfour{
             0%{ transform: translateY(-2000px); opacity: 0;}
             100%{ transform: translateY(0px); opacity: 1;} 
