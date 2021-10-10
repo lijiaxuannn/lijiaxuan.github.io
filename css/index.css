@@ -1,7 +1,120 @@
-body{
-  padding:0;
-  margin:0;
-}
-.warp{
-  background-color:red;
-}
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .warp {
+            position: relative;
+            animation-name: shangqu;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        #warp {
+            background-color: #9198e5;
+        }
+
+        .title {
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            animation: tit 3s;
+            position: relative;
+            text-align: center;
+        }
+        .title-img{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            animation-name: titimg;
+            animation-duration: 3s;
+        }
+        .main {
+            height: 500px;
+        }
+
+        .subject {
+            font-size: 25px;
+            font-weight: 500;
+            animation-delay: 3s;
+            animation-name: subject;
+            animation-duration: 3s;
+            position: relative;
+            animation-fill-mode: forwards;
+        }
+
+        .spacing {
+            margin: 15px 0;
+        }
+
+        .answerone {
+            animation-delay: 6s;
+            animation-name: answerone;
+            animation-duration: 1.5s;
+            width: 400px;
+        }
+
+        .answertow {
+            animation-delay: 7.5s;
+            position: relative;
+            animation-name: answertow;
+            animation-duration: 3s;
+            width: 400px;
+        }
+
+        .answerthree {
+            animation-delay: 10.5s;
+            animation-name: answerthree;
+            animation-duration: 1.5s;
+            width: 400px;
+            position: relative;
+        }
+
+        .answerfour {
+            animation-delay: 12s;
+            animation-name: answerfour;
+            animation-duration: 1.5s;
+        }
+        .footer{
+            height: 179px;
+        }
+
+        @keyframes tit{
+            from {
+                -webkit-transform: rotateY(0);
+                background-image: linear-gradient(to right, #e66465, #9198e5);
+            }
+            to {
+                -webkit-transform: rotateY(360deg);
+                background-image: linear-gradient(to right, #e66465, #9198e5);
+            }
+        }
+        @keyframes subject{
+            from{font-size: 25px;font-weight: 500;}
+            to{font-size: 30px;font-weight: 900;}
+        }
+        @keyframes answerone{
+            from {-webkit-transform: rotate(0deg)}
+            to {-webkit-transform: rotate(360deg);}
+        }
+        @keyframes answertow {
+            0%{right: -1580px;}
+            100%{right: 0px;}
+        }
+
+        @keyframes answerthree{
+            from{left: -400px;-webkit-transform: rotate(0deg);}
+            to{left: 0px;-webkit-transform: rotate(360deg);}
+        }
+
+        @keyframes answerfour{
+            0%{ transform: translateY(-2000px); opacity: 0;}
+            100%{ transform: translateY(0px); opacity: 1;} 
+        }
+        @keyframes titimg{
+            from{-webkit-transform: rotate(0deg);}
+            to{-webkit-transform: rotate(360deg);}
+        }
+        @keyframes shangqu{
+            0% {transform:translateY(0px)}
+            100% {transform:translateY(-800px)}
+        }
