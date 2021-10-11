@@ -2,6 +2,9 @@ body,div,h1,h2,h3,h4,h5{
     padding: 0;
     margin: 0;
 }
+body{
+    min-width: 1500px;
+}
 .title{
     height: 140px;
     display: flex;
@@ -58,7 +61,7 @@ body,div,h1,h2,h3,h4,h5{
     align-items: center;
     border-radius: 5px;
     border: 1px solid #dedede;
-    margin: 30px 15px;
+    margin: 15px 15px;
     color: #fff;
 }
 .color{
