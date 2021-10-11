@@ -3,7 +3,7 @@ body,div,h1,h2,h3,h4,h5{
     margin: 0;
 }
 body{
-    min-width: 1500px;
+    min-width: 1200px;
 }
 .title{
     height: 140px;
