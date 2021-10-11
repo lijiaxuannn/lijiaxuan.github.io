@@ -14,6 +14,7 @@ body,div,h1,h2,h3,h4,h5{
     font-weight: 900;
     margin-right: 145px;
     color: #fff;
+    font-style:oblique;
 }
 .tit-txt{
     color: #9ddcff;
@@ -59,6 +60,7 @@ body,div,h1,h2,h3,h4,h5{
     border-radius: 5px;
     border: 1px solid #dedede;
     margin: 30px 15px;
+    color: #fff;
 }
 .color{
     color: #2879d0;
@@ -71,6 +73,11 @@ body,div,h1,h2,h3,h4,h5{
     -webkit-box-orient: vertical;
 }
 .slash{
-    font-weight: 100;
-    color: #9ddcff;
+    display: inline-block;
+    background-color: #9ddcff;
+    width: 4px;
+    height: 26px;
+    border-radius: 10px 0px 10px 0px;
+    -webkit-transform: rotate(40deg);
+    margin: 0 5px;
 }
