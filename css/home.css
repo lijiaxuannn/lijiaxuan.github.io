@@ -67,7 +67,7 @@ body{
 .color{
     color: #2879d0;
 }
-.txet{
+.main-text{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
