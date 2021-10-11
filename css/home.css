@@ -35,8 +35,7 @@ body,div,h1,h2,h3,h4,h5{
 }
 .main-left{
     width: 760px;
-    height: 620px;
-    box-shadow: 5px 0px 5px #ccc;
+    box-shadow: 5px -2px 8px #ccc;
 }
 .main-right{
     width: 200px;
