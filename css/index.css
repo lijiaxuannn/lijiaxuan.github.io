@@ -15,7 +15,9 @@
             width: 100%;
             height: 80px;
             line-height: 80px;
-            animation: tit 3s;
+            animation-name: tit;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
             position: relative;
             text-align: center;
         }
@@ -74,12 +76,14 @@
         @keyframes tit{
             from {
                 -webkit-transform: rotateY(0);
-                background-image: linear-gradient(to right, #e66465, #9198e5);
             }
             to {
                 -webkit-transform: rotateY(360deg);
-                background-image: linear-gradient(to right, #e66465, #9198e5);
             }
+            from{
+                background-image:transparent;
+            }
+            to{background-image: linear-gradient(to right, #e66465, #9198e5);}
         }
         @keyframes subject{
             from{font-size: 25px;font-weight: 500;}
@@ -102,8 +106,11 @@
             100%{ transform: translateY(0px); opacity: 1;} 
         }
         @keyframes titimg{
-            from{-webkit-transform: rotate(0deg);}
-            to{-webkit-transform: rotate(360deg);}
+            0% {-webkit-transform: rotate(0deg);}
+            25% {-webkit-transform: rotate(90deg);}
+            50% {-webkit-transform: rotate(180deg);}
+            75% {-webkit-transform: rotate(270deg);}
+            100% {-webkit-transform: rotate(360deg);}
         }
         @keyframes shangqu{
             0% {transform:translateY(0px)}
