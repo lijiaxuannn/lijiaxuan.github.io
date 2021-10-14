@@ -1,3 +1,7 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 body,div,h1,h2,h3,h4,h5{
     padding: 0;
     margin: 0;
@@ -5,12 +9,19 @@ body,div,h1,h2,h3,h4,h5{
 body{
     min-width: 1200px;
 }
+#warp{
+    overflow: hidden;
+}
 .title{
     height: 140px;
     display: flex;
     background-color: #307cce;
     justify-content: space-evenly;
     align-items: center;
+}
+.dingwe{
+    position: relative;
+    left: -620px;
 }
 .tit-text{
     font-size: 40px;
@@ -31,28 +42,47 @@ body{
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
+    position: relative;
+    right: -482px;
 }
 .main{
     display: flex;
     justify-content: center;
     height: calc(100vh - 140px);
+
 }
 .main-left{
     width: 760px;
     box-shadow: 5px -2px 8px #ccc;
-}
-.main-right{
-    width: 200px;
+
 }
 .text{
     margin: 25px 0;
     color: #666666;
     padding: 0 15px;
 }
-.right-menu-img{
-    width: 40px;
-    height: 50px;
-    margin-right: 15px;
+.color{
+    color: #2879d0;
+}
+.header1{
+    position: relative;
+}
+.text-dingwei{
+    position: relative;
+    left: -1100px;
+}
+.main-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-indent: 18px;
+    position: relative;
+    left: -1100px;
+}
+.main-right{
+    width: 200px;
 }
 .right-menu{
     width: 180px;
@@ -65,24 +95,28 @@ body{
     border: 1px solid #dedede;
     margin: 15px 15px;
     color: #fff;
+    position: relative;
+    right: -485px;
+  
 }
-.color{
-    color: #2879d0;
+.right-menu-img{
+    width: 40px;
+    height: 50px;
+    margin-right: 15px;
 }
-.main-text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-indent: 18px;
+.left{
+    animation-name: lef;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-.slash{
-    display: inline-block;
-    background-color: #9ddcff;
-    width: 4px;
-    height: 26px;
-    border-radius: 10px 0px 10px 0px;
-    -webkit-transform: rotate(40deg);
-    margin: 0 5px;
+@keyframes lef{
+    to{left: 0px;}
+}
+.right{
+    animation-name: rig;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes rig{
+    to{right: 0px;}
 }
