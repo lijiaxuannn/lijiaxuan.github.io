@@ -1,32 +1,28 @@
-export default class Markdown {
-    constructor(props) {
-        this.text = typeof props == 'string' ? props : props.el.innerHTML;
+export default class Markdown{
+    static TITLE_REG = /(#+)\s+([^\n]+)/;
+    constructor(text){
+        this.text = text;
     }
-    parse() {
-        var str = this.text.replace(/.+/g, (item) => {
-            item = item.trim();
-            return item;
-        })
-        return str;
-    }
-    parseHtml() {
-        let res = this.parse();
-        res=res.split(/\n/g);
-        var fragment=document.createDocumentFragment();
-        res.forEach(item=>{
-            if(item.indexOf('#')>-1){
-                var arr=item.split(/(\s+)/g);
-                var length=arr[0].length>6?6:arr[0].length;
-                var el=document.createElement('h'+length);
-                el.textContent=arr[2];
-                fragment.appendChild(el);
-            }
-            else{
-                var p=document.createElement('p');
-                p.textContent=item;
-                fragment.appendChild(p);
+    parse(){
+        return this.text.replace(/.+/g,(item)=>{
+            if(Markdown.isTitle(item)){
+                return this.parseTitle(item);
+            }else{
+                return this.parseParagraph(item)
             }
         })
-        return fragment;
+    }
+    parseParagraph(text){
+        return text.trim().length ? `<p>${text.trim()}</p>` : '';
+    }
+    parseTitle(text){
+        return text.replace(Markdown.TITLE_REG,function(item){
+            let n = RegExp.$1.length > 6 ? 6 : RegExp.$1.length;  // 1-6个#号；
+            let textConent = RegExp.$2;
+            return `<h${n}>${textConent}</h${n}>`;
+        })
+    }
+    static isTitle(val){
+        return Markdown.TITLE_REG.test(val);
     }
 }
