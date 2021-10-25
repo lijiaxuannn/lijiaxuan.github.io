@@ -108,14 +108,14 @@ class Markdown {
     }
     parse() {
         var str = this.text.replace(/.+/g, (item) => {
-            item = item.trim()
-            return item
+            item = item.trim();
+            return item;
         })
-        return str
+        return str;
     }
     parseHtml() {
-        let res = this.parse()
-        res=res.split(/\n/g)
+        let res = this.parse();
+        res=res.split(/\n/g);
         var fragment=document.createDocumentFragment();
         res.forEach(item=>{
             if(item.indexOf('#')>-1){
