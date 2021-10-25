@@ -1,0 +1,187 @@
+body,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+#warp {
+  background-color: #f6f6f6;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  box-shadow: 0px 0px 5px #ccc;
+  background-color: #fff;
+}
+.header > .left {
+  display: flex;
+  align-items: center;
+}
+.header > .left .logo {
+  width: 64px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Cursive;
+  color: #0066ff;
+}
+.header > .left .list {
+  display: flex;
+  list-style: none;
+}
+.header > .left .list > li {
+  margin: 0 10px;
+  color: #8590A6;
+}
+.header > .center .inp {
+  width: 300px;
+  border: none;
+  background-color: #f6f6f6;
+  height: 30px;
+  border-radius: 30px;
+  text-indent: 15px;
+  margin: 0 170px;
+  outline: none;
+}
+.header > .right {
+  border: 1px solid #0066ff;
+  color: #0066ff;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main .left .top {
+  width: 700px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+}
+.main .left .top .logo > img {
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+}
+.main .left .top .text {
+  margin: 15px 0;
+}
+.main .left .top .text > .text-top {
+  font-size: 20px;
+  font-weight: 900;
+}
+.main .left .top .text > .text-bot {
+  padding-right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.main .left .subject {
+  background-color: #fff;
+  width: 700px;
+  height: 485px;
+}
+.main .left .subject .tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 1px #ccc;
+  height: 50px;
+}
+.main .left .subject .tit > .left > span {
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.main .left .subject .tit > .left .select {
+  font-weight: 900;
+  border-bottom: 2px solid #0066ff;
+}
+.main .left .subject .conversation {
+  padding: 0 15px;
+  box-shadow: 1px 0px 1px #ccc;
+  border: 1px solid transparent;
+}
+.main .left .subject .conversation > .title {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 5px 0;
+}
+.main .left .subject .conversation > .nav {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.main .left .subject .conversation > .nav > span {
+  display: inline-block;
+  margin-right: 13px;
+  color: #ccc;
+}
+.main .left .subject .conversation > .nav > .follow {
+  width: 100px;
+  height: 25px;
+  background-color: #d9e7ff;
+  color: #0066ff;
+  text-align: center;
+  border-radius: 2px;
+}
+.main > .right {
+  width: 300px;
+  margin: 0 15px;
+}
+.main > .right .top {
+  background-color: #fff;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main > .right .top .left {
+  width: 150px;
+  border-right: 1px solid #ebebeb;
+}
+.main > .right .top .right {
+  width: 150px;
+}
+.main > .right > .subject {
+  padding: 10px;
+  background-color: #fff;
+}
+.main > .right > .subject > span {
+  display: inline-block;
+  background-color: #e5efff;
+  text-align: center;
+  color: #0066ff;
+  min-width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 30px;
+  padding: 0 5px;
+  margin: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.hd {
+  display: flex;
+}
+.hd > img {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+}
+.hd .title {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 5px 0;
+}
+
